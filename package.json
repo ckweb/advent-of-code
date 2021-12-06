@@ -3,12 +3,16 @@
   "version": "1.0.0",
   "description": "Advent of Code programs for 2021",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Christopher Keane (chris@ckweb.com)",
   "license": "ISC",
   "dependencies": {
-    "fetch": "^1.1.0"
+    "axios": "^0.24.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.4.0"
   }
 }
