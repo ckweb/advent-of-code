@@ -1,4 +1,5 @@
 import axios from "axios";
+import sessionID from "../../utils/getSessionID.js";
 
 const inputURL = "https://adventofcode.com/2021/day/1/input";
 let numberOfIncreases = 0;
@@ -6,7 +7,7 @@ let previousReading;
 
 axios.get(inputURL, {
   headers: {
-    "Cookie": "session=53616c7465645f5fb7bcbdf752c176551a2bca843c53fa661c5df0c06e6855dce73ad8f20d8c03095665e94c3e89773b"
+    "Cookie": `session=${sessionID}`
   }
 }).then(function (response) {
   getNumberOfIncreases(response.data);
