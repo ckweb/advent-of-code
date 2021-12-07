@@ -1,5 +1,5 @@
 import axios from "axios";
-import sessionID from "../../utils/getSessionID.js";
+import { sessionID } from "../../utils/cookies.js";
 
 const inputURL = "https://adventofcode.com/2021/day/1/input";
 let numberOfIncreases = 0;
